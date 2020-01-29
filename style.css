@@ -5,8 +5,8 @@ body {
     background-image: url(back.jpg);
     background-size: cover;
     background-position: center;
+    animation: animate 5s infinite;
 }
-
 .sign-up-form {
     width: 320px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
@@ -14,18 +14,41 @@ body {
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
+    transform: translate(-50,-50);
+    transform-origin: 10%;
+
+   
 }
 .sign-up-form h1 {
     color: #1c8adb;
     margin-bottom: 30px;
+    animation: mymove 5s infinite;
 }
 .input-box {
     border-radius: 18px;
-    padding: 10px;
     margin: 10px 0;
     width: 90%;
     border: 1px solid #999;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #221134;
     outline: none;
+    background: transparent;
+    
+    
+}
+::placeholder {
+    top: 0%;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0px;
+    font-size: 16px;
+    color: #8856be;
+    pointer-events: none;
+    transition: 10s;
+    opacity: 1;    
+
 }
 button {
     color: #fff;
@@ -39,10 +62,16 @@ button {
     cursor: pointer;
 }
 .signup-btn {
-    background-color: #1c8adb;
+    background-color: #2510df;
+}
+.signup-btn:hover {
+    background-color: antiquewhite;
 }
 .twitter-btn {
     background-color: #21afed;
+}
+.twitter-btn:hover {
+    background-color: blanchedalmond;
 }
 a {
     text-decoration: none;
@@ -52,7 +81,7 @@ hr {
     width: 80%;
 }
 .or {
-    background-color: #fff;
+    background-color: rgb(234, 241, 234);
     width: 30px;
     margin: -19px auto 10px;
 }
