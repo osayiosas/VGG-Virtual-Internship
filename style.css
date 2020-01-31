@@ -2,53 +2,76 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-image: url(back.jpg);
+    background-image: url(ti.jpg);
     background-size: cover;
     background-position: center;
-    animation: animate 5s infinite;
 }
 .sign-up-form {
-    width: 320px;
+    /*width: 320px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
-    background: #fff;
+    background: transparent;
     padding: 20px;
     margin: 8% auto 0;
     text-align: center;
     transform: translate(-50,-50);
     transform-origin: 10%;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    background-color: ;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 380px;
+    padding: 40px;
+    background: rgba(53, 52, 52, 0.8);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 90%;
 
    
 }
 .sign-up-form h1 {
-    color: #1c8adb;
-    margin-bottom: 30px;
-    animation: mymove 5s infinite;
+    color: #fff;
+    margin: 30px;
+    text-align: center;
+
+    
 }
-.input-box {
-    border-radius: 18px;
-    margin: 10px 0;
-    width: 90%;
-    border: 1px solid #999;
+.inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(54, 53, 53);
     letter-spacing: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     border: none;
-    border-bottom: 1px solid #221134;
+    border-bottom: 1px solid rgb(26, 4, 4);
     outline: none;
     background: transparent;
-    
-    
+    transition: border-bottom 0.5s ease-in;
 }
-::placeholder {
+.inputbox label {
+    position: relative;
     top: 0%;
     left: 0;
     letter-spacing: 1px;
-    padding: 10px 0px;
-    font-size: 16px;
-    color: #8856be;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgb(228, 216, 216);
     pointer-events: none;
-    transition: 10s;
-    opacity: 1;    
-
+    text-transform: uppercase;
+    transition: top 0.5, ease;
+    
+}
+.sign-up-form .inputbox input:focus{
+    border-color: rgb(163, 73, 133);
+}
+.sign-up-form .inputbox input:focus ~ label,
+.sign-up-form .inputbox input :valid ~ label {
+    top: -18px;
+    left: 0px;
+    color: rgba(199, 102, 178, 1);
+    font-size: 12px;
 }
 button {
     color: #fff;
@@ -60,6 +83,7 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: ease-in-out;
 }
 .signup-btn {
     background-color: #2510df;
@@ -81,12 +105,11 @@ hr {
     width: 80%;
 }
 .or {
-    background-color: rgb(234, 241, 234);
-    width: 30px;
-    margin: -19px auto 10px;
+    background-color: rgb(61, 60, 60);
+    width: 25px;
+    margin: -18px auto 10px;
 }
-img {
-    width: 80px;
-    margin-top: -50px;
-    
+p {
+    text-transform: capitalize;
+    color: azure;
 }
