@@ -41,7 +41,7 @@ body {
     width: 100%;
     padding: 10px 0;
     font-size: 16px;
-    color: rgb(54, 53, 53);
+    color: rgb(204, 189, 189);
     letter-spacing: 1px;
     margin-bottom: 15px;
     border: none;
@@ -113,3 +113,6 @@ p {
     text-transform: capitalize;
     color: azure;
 }
+@media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%;} /* The width is 100%, when the viewport is 800px or smaller */}
